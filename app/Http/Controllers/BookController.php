@@ -72,7 +72,8 @@ class BookController extends Controller
      */
     public function show($id)
     {
-        //
+        $book = Book::find($id);
+        return("show", compact($book));
     }
 
     /**
